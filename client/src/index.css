@@ -1,0 +1,203 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+a {
+  color: #4a6cf7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #3a5bd9;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4a6cf7;
+  border-color: #4a6cf7;
+}
+
+.btn-primary:hover {
+  background-color: #3a5bd9;
+  border-color: #3a5bd9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.2);
+}
+
+.btn-outline-primary {
+  color: #4a6cf7;
+  border-color: #4a6cf7;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4a6cf7;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.2);
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 0.2rem rgba(74, 108, 247, 0.25);
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border-color: #ddd;
+  color: #666;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Not Found */
+.pnf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.pnf-title {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #4a6cf7;
+  margin-bottom: 20px;
+}
+
+.pnf-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pnf-message {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.pnf-btn {
+  padding: 12px 30px;
+  background-color: #4a6cf7;
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.pnf-btn:hover {
+  background-color: #3a5bd9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.2);
+}
+
+/* Contact Page */
+.contactus {
+  padding: 80px 0;
+}
+
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.contact-info {
+  background-color: #4a6cf7;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .pnf-title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .pnf-title {
+    font-size: 4rem;
+  }
+  
+  .pnf-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .pnf-title {
+    font-size: 3rem;
+  }
+}

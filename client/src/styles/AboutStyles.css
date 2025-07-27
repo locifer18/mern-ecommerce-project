@@ -1,0 +1,249 @@
+/* About Page Styles */
+.about-page {
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+}
+
+.about-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about-hero p {
+  opacity: 0.9;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.2s;
+  animation-fill-mode: both;
+}
+
+.about-hero .d-flex {
+  animation: fadeInUp 0.8s ease-out 0.4s;
+  animation-fill-mode: both;
+}
+
+.about-hero img {
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.5s ease;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero img:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Our Story Section */
+.about-page section {
+  padding: 80px 0;
+}
+
+.about-page h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.about-page h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a6cf7, #3a5bd9);
+  border-radius: 3px;
+}
+
+.about-page .text-center h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-page p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.about-page img {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.5s ease;
+}
+
+.about-page img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us Section */
+.bg-light {
+  background-color: #f8f9fa !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(74, 108, 247, 0.05) 0%, rgba(74, 108, 247, 0) 70%);
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  height: 100%;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.rounded-circle {
+  overflow: hidden;
+  border: 5px solid rgba(74, 108, 247, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover .rounded-circle {
+  border-color: rgba(74, 108, 247, 0.3);
+  transform: scale(1.05);
+}
+
+.text-muted {
+  color: #4a6cf7 !important;
+  font-weight: 500;
+}
+
+/* Animation for cards */
+.card {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.col-md-6:nth-child(1) .card { animation-delay: 0.1s; }
+.col-md-6:nth-child(2) .card { animation-delay: 0.2s; }
+.col-md-6:nth-child(3) .card { animation-delay: 0.3s; }
+.col-md-6:nth-child(4) .card { animation-delay: 0.4s; }
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  
+  .about-page section {
+    padding: 60px 0;
+  }
+  
+  .about-page h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero {
+    padding: 50px 0;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .about-page section {
+    padding: 50px 0;
+  }
+  
+  .about-page h2 {
+    font-size: 1.6rem;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-hero {
+    padding: 40px 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-page section {
+    padding: 40px 0;
+  }
+  
+  .about-page h2 {
+    font-size: 1.5rem;
+  }
+}
