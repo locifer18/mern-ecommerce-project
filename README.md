@@ -6,7 +6,7 @@ This is a fully functional **E-Commerce web application** built using the MERN (
 
 ## 🚀 Live Demo
 
-- 🔗 https://bespoke-fox-4c19c4.netlify.app/
+- 🔗 https://luxury-begonia-e4acf2.netlify.app/
 
 ---
 
